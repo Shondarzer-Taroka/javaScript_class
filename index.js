@@ -67,29 +67,29 @@ console.log(add);
 class Person {
     constructor(name, age) {
         this._name = name
-        this._age=age
+        this._age = age
     }
 
-    get name(){
+    get name() {
         return this._name
     }
 
-    set age(value){
-        if (value<0) {
+    set age(value) {
+        if (value < 0) {
             return ` age must be positive`
         } else {
-           this._age = value;
+            this._age = value;
 
         }
     }
 }
 
-const rakib= new Person('Rakib',34)
+const rakib = new Person('Rakib', 34)
 console.log(rakib.name);
 // console.log(rakib.set(-5));
 console.log(rakib._age);
 
-rakib.age=-8
+rakib.age = -8
 // console.log(rakib.age(-5));
 
 
@@ -107,17 +107,17 @@ rakib.age=-8
 
 
 
-class Counter{
-    #count=0
+class Counter {
+    #count = 0
 
-    increment(){
+    increment() {
         this.#count++
         console.log(this.#count);
-        
+
     }
 }
 
-const counter_1=new Counter()
+const counter_1 = new Counter()
 counter_1.increment()
 counter_1.increment()
 counter_1.increment()
@@ -140,22 +140,20 @@ counter_1.increment()
 
 
 
-  /// ///////////// binding this
+/// ///////////// binding this
 
-  class Button{
-    constructor(){
-        this.btn='click me'
-        this.handleClick=()=>{
+class Button {
+    constructor() {
+        this.btn = 'click me'
+        this.handleClick = () => {
             console.log(this.btn);
-            
+
         }
     }
-  }
+}
 
-  let bt1= new Button()
-  console.log(bt1.handleClick());
-  
-
+let bt1 = new Button()
+console.log(bt1.handleClick());
 
 
 
@@ -164,4 +162,19 @@ counter_1.increment()
 
 
 
-  
+
+
+class Drim {
+    // this.name=name
+    name = 'gorol'
+
+    // console.log(this.name);
+    getName(){
+        console.log(this.name);
+        
+    }
+    
+}
+
+let name2=new Drim()
+console.log(name2.name);
