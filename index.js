@@ -93,3 +93,75 @@ rakib.age=-8
 // console.log(rakib.age(-5));
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Counter{
+    #count=0
+
+    increment(){
+        this.#count++
+        console.log(this.#count);
+        
+    }
+}
+
+const counter_1=new Counter()
+counter_1.increment()
+counter_1.increment()
+counter_1.increment()
+counter_1.increment()
+counter_1.increment()
+counter_1.increment()
+counter_1.increment()
+counter_1.increment()
+counter_1.increment()
+counter_1.increment()
+counter_1.increment()
+counter_1.increment()
+counter_1.increment()
+counter_1.increment()
+counter_1.increment()
+
+
+
+
+
+
+
+  /// ///////////// binding this
+
+  class Button{
+    constructor(){
+        this.btn='click me'
+        this.handleClick=()=>{
+            console.log(this.btn);
+            
+        }
+    }
+  }
+
+  let bt1= new Button()
+  console.log(bt1.handleClick());
+  
+
+
+
+
+
+
+
+
+
+  
