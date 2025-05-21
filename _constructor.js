@@ -34,3 +34,23 @@ let room4=new Room2('Qeaui')
 console.log(room3.getRoom===room4.getRoom);
 console.log(room4);
 
+
+
+
+
+
+
+
+function SecretBox() {
+    function secret() {
+        console.log("Hidden stuff");
+    }
+
+    this.reveal = function() {
+        secret(); // ✅ allowed
+    };
+}
+
+const box = new SecretBox();
+box.reveal(); // ✅ Hidden stuff
+box.secret(); // ❌ TypeError
