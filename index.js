@@ -49,18 +49,47 @@ console.log(parrot.getBirdFly());
 
 
 
-class MathUtils{
-    static add(a,b){
+class MathUtils {
+    static add(a, b) {
         return a + b
     }
 }
 
-let add=  MathUtils.add(23,345)
+let add = MathUtils.add(23, 345)
 console.log(add);
 
 
 
 
 
+
+
+class Person {
+    constructor(name, age) {
+        this._name = name
+        this._age=age
+    }
+
+    get name(){
+        return this._name
+    }
+
+    set age(value){
+        if (value<0) {
+            return ` age must be positive`
+        } else {
+           this._age = value;
+
+        }
+    }
+}
+
+const rakib= new Person('Rakib',34)
+console.log(rakib.name);
+// console.log(rakib.set(-5));
+console.log(rakib._age);
+
+rakib.age=-8
+// console.log(rakib.age(-5));
 
 
