@@ -101,4 +101,31 @@ nilima2.gratings()
 
 
 
+class Student{
+    constructor(name,className){
+        this.name=name
+        this.className=className
+    }
+}
+
+
+class newStudent extends Student{
+    constructor(name,className,role){
+        super(name,className)
+        this.role=role
+    }
+    getStudent(){
+        console.log('std',this);
+        
+        return `${this.name} ${this.className} ${this.role} `
+    }
+}
+
+let std1=new newStudent('Riskol','Seven',9)
+console.log(std1.getStudent());
+
+
+
+
+
 
