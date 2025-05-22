@@ -41,16 +41,16 @@ console.log(room4);
 
 
 
-function SecretBox() {
-    function secret() {
-        console.log("Hidden stuff");
-    }
+// function SecretBox() {
+//     function secret() {
+//         console.log("Hidden stuff");
+//     }
 
-    this.reveal = function() {
-        secret(); // ✅ allowed
-    };
-}
+//     this.reveal = function() {
+//         secret(); // ✅ allowed
+//     };
+// }
 
-const box = new SecretBox();
-box.reveal(); // ✅ Hidden stuff
-box.secret(); // ❌ TypeError
+// const box = new SecretBox();
+// box.reveal(); // ✅ Hidden stuff
+// box.secret(); // ❌ TypeError
