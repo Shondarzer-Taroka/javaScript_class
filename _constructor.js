@@ -82,6 +82,8 @@ class Nilima {
     }
 
     gratings(){
+        console.log(`this great`,this);
+        
         console.log(`${this.name} ${this.grating}`);
         
     }
